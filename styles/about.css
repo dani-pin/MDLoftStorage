@@ -1,0 +1,53 @@
+.about-container {
+    display: grid;
+    gap: 3rem;
+    justify-items: center;
+    max-width: 1000px;
+}
+
+.about-header {
+    text-align: center;
+}
+
+.about-upper-line {
+    margin-inline: auto;
+}
+
+.about-info {
+    max-width: 860px;
+    text-align: justify;
+    background-color: var(--white);
+    padding: 40px 50px;
+    border-radius: 10px;
+}
+
+.about-info>p:not(:first-child),
+.about-btn {
+    margin-top: 1.5rem;
+}
+
+.about-btn {
+    margin-inline: auto;
+    display: block;
+    width: fit-content;
+}
+
+@media(max-width:1007px) {
+    .about-section {
+        padding-top: 2rem;
+    }
+
+    .about-container {
+        gap: 2rem;
+    }
+}
+
+@media(max-width:555px) {
+    .about-container {
+        gap: 1.2rem;
+    }
+
+    .about-info {
+        padding: 20px 30px;
+    }
+}
