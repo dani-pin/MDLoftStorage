@@ -18,6 +18,13 @@
 
 }
 
+
+@media (max-width:555px) {
+    .hero-info-container {
+        padding: 40px 15px;
+    }
+}
+
 .hero-upper-line {
     margin-inline: auto;
 }
@@ -87,5 +94,19 @@
 @media only screen and (min-width: 768px) {
     .gallery-photos {
         grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width:555px) {
+    .best-seller-section-services-page {
+        padding-top: 0;
+    }
+
+    .gallery-header {
+        flex-direction: column;
+    }
+
+    .gallery-upper-line {
+        margin-inline: auto;
     }
 }
