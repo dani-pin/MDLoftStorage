@@ -43,7 +43,6 @@ if (banner) {
   const bannerContainer = banner.querySelector('.banner-container')
 
   window.addEventListener('scroll', () => {
-    console.log(window.scrollY)
     bannerContainer.style.transform = `translateX(${-window.scrollY * 0.5}px)`
   })
 }
