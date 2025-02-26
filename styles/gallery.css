@@ -18,6 +18,10 @@
     object-fit: cover;
 }
 
+.gallery-img:hover {
+    opacity: 0.9;
+}
+
 .gallery-page-header {
     margin-bottom: 40px;
 }

@@ -231,6 +231,11 @@
 
 .services-title {
   color: var(--white);
+  text-align: center;
+}
+
+.services-upper-line {
+  margin-top: 35px;
 }
 
 @media (max-width:555px) {
@@ -424,7 +429,8 @@
 @media (max-width:1007px) {
 
   .hero-info-container,
-  .benefits-upper-line {
+  .benefits-upper-line,
+  .services-upper-line {
     margin-top: 0;
   }
 

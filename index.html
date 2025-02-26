@@ -24,6 +24,15 @@
     integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
 
+  <!-- AOS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    window.addEventListener('DOMContentLoaded', () => {
+      AOS.init()
+    })
+  </script>
+
   <!--  Styles -->
   <link rel="stylesheet" href="./styles/share.css">
   <link rel="stylesheet" href="./styles/index.css">
@@ -45,11 +54,11 @@
         <a class="site-nav-link" href="gallery.html">Gallery</a>
         <a class="site-nav-link" href="about.html">About</a>
         <a class="site-nav-link" href="#site-footer">Contact</a>
-        <a href="https://api.whatsapp.com/send?phone=447469342877" target="_blank"
+        <a href="https://api.whatsapp.com/send?phone=447469342877" target=" _blank"
           class="btn-secondary btn-secondary-light-blue site-nav-btn">Let's Talk!</a>
       </div>
 
-      <button id="site-nav-hamburger" class="site-nav-hamburger" aria-label="Open navigation">
+      <button id="site-nav-hamburger" class="site-nav-hamburger" aria-label="Open Navigation">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none">
           <path d="M4 18L20 18" stroke="currentColor" stroke-width="2" stroke-linecap="round"></path>
           <path d="M4 12L20 12" stroke="currentColor" stroke-width="2" stroke-linecap="round"></path>
@@ -66,7 +75,7 @@
       <a href="https://api.whatsapp.com/send?phone=447469342877" target="_blank"
         class="btn-secondary btn-secondary-light-blue mobile-site-nav-btn">Let's Talk!</a>
 
-      <button id="mobile-site-nav-close" class="mobile-site-nav-close" aria-label="Close navigation">
+      <button id="mobile-site-nav-close" class="mobile-site-nav-close" aria-label="Close Navigation">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none">
           <path d="M19 5L5 19M5.00001 5L19 19" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round"
             stroke-linejoin="round"></path>
@@ -79,12 +88,15 @@
     <section class="hero-section section">
       <div class="container">
         <div class="hero-info-container">
-          <div class="upper-line-white hero-upper-line"></div>
-          <h1 class="h1 hero-h1">Transform Your Loft into storage</h1>
-          <p class="subheading hero-subheading">Convert your unused loft into a practical, energy-efficient space. We
+          <div data-aos="fade-right" data-aos-offset="0" class="upper-line-white hero-upper-line"></div>
+          <h1 data-aos="fade-up" data-aos-delay="300" data-aos-offset="0" class="h1 hero-h1">Transform Your Loft into
+            storage</h1>
+          <p data-aos="fade-up" data-aos-delay="600" data-aos-offset="0" class="subheading hero-subheading">Convert your
+            unused loft into a practical, energy-efficient space. We
             offer tailored solutions to suit your unique needs. Proudly serving homes across West Yorkshire with expert
             advice!</p>
-          <a href="https://api.whatsapp.com/send?phone=447469342877" target="_blank"
+          <a data-aos="fade-up" data-aos-delay="900" data-aos-offset="0"
+            href="https://api.whatsapp.com/send?phone=447469342877" target="_blank"
             class="btn-primary btn-primary-orange">Get Your Free Quote!</a>
         </div>
       </div>
@@ -117,11 +129,11 @@
 
     <section class="benefits-section section">
       <div class="container">
-        <div class="upper-line-dark-blue benefits-upper-line"></div>
-        <h2 class="h2">Maximize Your Loft’s Potential!</h2>
+        <div data-aos="fade-right" data-aos-offset="0" class="upper-line-dark-blue benefits-upper-line"></div>
+        <h2 data-aos="fade-up" data-aos-delay="300" data-aos-offset="0" class="h2">Maximize Your Loft’s Potential!</h2>
         <div class="benefits-container">
           <div class="benefit">
-            <div>
+            <div data-aos="fade-up" data-aos-delay="600" data-aos-easing="linear" data-aos-offset="0">
               <img class="benefit-icon" src="./images/extra-safe-icon.png" alt="Extra safe icon">
               <h3 class="h4 benefit-title">Extra Safe Storage</h3>
             </div>
@@ -131,7 +143,7 @@
           </div>
 
           <div class="benefit">
-            <div>
+            <div data-aos="fade-up" data-aos-delay="600" data-aos-easing="linear" data-aos-offset="0">
               <img class="benefit-icon" src="./images/property-value-icon.png" alt="Increase property value icon">
               <h3 class="h4 benefit-title">Increase Property Value</h3>
             </div>
@@ -141,7 +153,7 @@
           </div>
 
           <div class="benefit">
-            <div>
+            <div data-aos="fade-up" data-aos-delay="600" data-aos-easing="linear" data-aos-offset="0">
               <img class="benefit-icon" src="./images/savings-icon.png" alt="Savings icon">
               <h3 class="h4 benefit-title">Energy Efficiency and Savings</h3>
             </div>
@@ -151,7 +163,7 @@
           </div>
 
           <div class="benefit">
-            <div>
+            <div data-aos="fade-up" data-aos-delay="600" data-aos-easing="linear" data-aos-offset="0">
               <img class="benefit-icon" src="./images/hassle-free-icon.png" alt="Hassle-free icon">
               <h3 class="h4 benefit-title">Hassle-Free Installation</h3>
             </div>
@@ -206,8 +218,8 @@
 
     </section>
 
-    <section class="services-section section">
-      <div class="container">
+    <section class="services-section section" style="overflow-x: hidden;">
+      <div class=" container">
         <div class="services-header">
           <div>
             <div class="upper-line-white services-upper-line"></div>
@@ -223,7 +235,7 @@
                 alt="Sturdy loft ladder providing safe and easy access to attic space">
             </div>
             <div class="service-description">
-              <h3 class="h3">
+              <h3 data-aos="fade-left" data-aos-offset="150" class="h3">
                 Loft Ladders
               </h3>
               <p class="subheading service-subheading">Accessing your loft should be both simple and safe. Choose from
@@ -237,7 +249,7 @@
               <img src="./images/our-services-2.png" alt="Loft hatch providing secure and easy access to attic storage">
             </div>
             <div class="service-description">
-              <h3 class="h3">
+              <h3 data-aos="fade-right" data-aos-offset="150" class="h3">
                 Loft Hatches
               </h3>
               <p class="subheading service-subheading">Our loft hatches are crafted to seamlessly blend into your
@@ -251,7 +263,7 @@
                 alt="Loft flooring installed for safe, durable, and efficient attic storage">
             </div>
             <div class="service-description">
-              <h3 class="h3">
+              <h3 data-aos="fade-left" data-aos-offset="150" class="h3">
                 Loft Flooring
               </h3>
               <p class="subheading service-subheading">Our flooring solutions ensures a sturdy, durable and safe
@@ -265,7 +277,7 @@
                 alt="Loft lights and electrical fittings for a bright and functional attic space">
             </div>
             <div class="service-description">
-              <h3 class="h3">
+              <h3 data-aos="fade-right" data-aos-offset="150" class="h3">
                 Loft Lights & Electrical Fittings
               </h3>
               <p class="subheading service-subheading">Whether you need basic illumination or a tailored electrical
@@ -279,7 +291,7 @@
                 alt="Insulation upgrades for improved energy efficiency and loft warmth">
             </div>
             <div class="service-description">
-              <h3 class="h3">
+              <h3 data-aos="fade-left" data-aos-offset="150" class="h3">
                 Insulation Upgrades
               </h3>
               <p class="subheading service-subheading">From Breathable Membrane Installation to Old Insulation Removal
@@ -293,7 +305,7 @@
                 alt="Organized loft storage with neatly packed boxes for efficient space use">
             </div>
             <div class="service-description">
-              <h3 class="h3">
+              <h3 data-aos="fade-right" data-aos-offset="150" class="h3">
                 Loft Clearance
               </h3>
               <p class="subheading service-subheading">Is your loft cluttered with old, unused items? Our Loft
@@ -350,21 +362,21 @@
             class="btn-primary btn-primary-light-blue md-and-lg-screen-btn">Let's Talk!</a>
         </div>
         <div class="process-steps">
-          <div class="process-step">
+          <div data-aos="flip-left" data-aos-offset="250" class="process-step">
             <div class="process-step-number h2">01</div>
             <p class="subheading">Contact us for a quote! Include your name, contact details, area size, desired
               services,
               and any photos or details you can provide.</p>
           </div>
-          <div class="process-step">
+          <div data-aos="flip-left" data-aos-delay="300" data-aos-offset="250" class="process-step">
             <div class="process-step-number h2">02</div>
             <p class="subheading">We inspect your loft, providing a valid quote for 14 days.</p>
           </div>
-          <div class="process-step">
+          <div data-aos="flip-left" data-aos-delay="600" data-aos-offset="250" class="process-step">
             <div class="process-step-number h2">03</div>
             <p class="subheading">Schedule the installation date. Ensure the loft is clear before our visit.</p>
           </div>
-          <div class="process-step">
+          <div data-aos="flip-left" data-aos-delay="900" data-aos-offset="250" class="process-step">
             <div class="process-step-number h2">04</div>
             <p class="subheading">We arrive, protect your home with drop sheets, and complete the installation as
               agreed.</p>
@@ -421,7 +433,7 @@
             <img class="gallery-img" src="./images/gallery-home-7.png" alt="Spacious and well-finished loft storage">
           </div>
         </div>
-        <div class="small-screen-btn-container "><a href="gallery.html"
+        <div class="small-screen-btn-container "><a aria-label="View Our Gallery" href="gallery.html"
             class=" btn-primary btn-primary-dark-blue small-screen-btn" style="margin-top: 40px;">View More</a>
         </div>
       </div>
@@ -589,7 +601,8 @@
   </footer>
   <!-- whatsapp button -->
   <div class="whatsapp-container">
-    <a href="https://api.whatsapp.com/send?phone=447469342877" target="_blank" class="whatsapp-btn">
+    <a aria-label="Chat on WhatsApp" href="https://api.whatsapp.com/send?phone=447469342877" target="_blank"
+      class="whatsapp-btn">
       <i class="fa-brands fa-whatsapp"></i>
     </a>
   </div>
