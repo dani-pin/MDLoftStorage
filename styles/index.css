@@ -217,7 +217,9 @@
 
 /* Services Section */
 .services-section {
-  background-color: var(--blue-800);
+  background:
+    url('../images/cross-bg.svg') repeat,
+    var(--blue-800);
 }
 
 .services-header {
