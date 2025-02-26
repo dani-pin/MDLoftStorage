@@ -24,6 +24,15 @@
         integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        window.addEventListener('DOMContentLoaded', () => {
+            AOS.init()
+        })
+    </script>
+
     <!--  Styles -->
     <link rel="stylesheet" href="./styles/share.css">
     <link rel="stylesheet" href="./styles/services.css">
@@ -78,15 +87,18 @@
         <section class="hero-section section">
             <div class="container">
                 <div class="hero-info-container">
-                    <div class="upper-line-dark-blue hero-upper-line"></div>
-                    <h1 class="h1 hero-title">Transform Your Loft with Our Services</h1>
-                    <p class="subheading hero-description">we specialize in creating smarter, more functional living
+                    <div data-aos="fade-right" data-aos-offset="0" class="upper-line-dark-blue hero-upper-line"></div>
+                    <h1 data-aos="fade-up" data-aos-delay="300" data-aos-offset="0" class="h1 hero-title">Transform Your
+                        Loft with Our Services</h1>
+                    <p data-aos="fade-up" data-aos-delay="600" data-aos-offset="0" class="subheading hero-description">
+                        we specialize in creating smarter, more functional living
                         spaces by unlocking the full potential of your loft. Whether you need more storage, better
                         access, or energy-saving upgrades, we’re here to provide tailored, high-quality solutions that
                         meet your unique needs. Our services are designed with you in mind, ensuring long-lasting
                         results and peace of mind.</p>
 
-                    <a href="https://api.whatsapp.com/send?phone=447469342877" target="_blank"
+                    <a data-aos="fade-up" data-aos-delay="900" data-aos-offset="0"
+                        href="https://api.whatsapp.com/send?phone=447469342877" target="_blank"
                         class="btn-primary btn-primary-orange">Get In Touch Today</a>
                 </div>
             </div>
@@ -117,7 +129,7 @@
             </div>
         </div>
 
-        <section class="services-list-section section">
+        <section class="services-list-section section" style="overflow-x: hidden;">
             <div class="container">
 
                 <div class="service-container">
@@ -126,7 +138,8 @@
                             alt="Sturdy loft ladder providing safe and easy access to attic space">
                     </div>
 
-                    <div>
+                    <div data-aos="fade-right" data-aos-offset="250" data-aos-anchor-placement="top-bottom"
+                        data-aos-duration="900">
                         <div class="service-number h2">01</div>
                         <h2 class="h3">Loft Ladders: Easy Access, Effortless Convenience</h2>
                         <p class="subheading service-description">Accessing your loft should be simple,
@@ -145,7 +158,7 @@
                             alt="Loft hatch providing secure and easy access to attic storage">
                     </div>
 
-                    <div>
+                    <div data-aos="fade-left" data-aos-offset="250" data-aos-duration="900">
                         <div class="service-number h2">02</div>
                         <h2 class="h3">Loft Hatches: Secure and Efficient Access</h2>
                         <p class="subheading service-description">A quality loft hatch is essential for both safety
@@ -164,7 +177,8 @@
                             alt="Loft flooring installed for safe, durable, and efficient attic storage">
                     </div>
 
-                    <div>
+                    <div data-aos="fade-right" data-aos-offset="250" data-aos-anchor-placement="top-bottom"
+                        data-aos-duration="900">
                         <div class="service-number h2">03</div>
                         <h2 class="h3">Loft Flooring: Durable, Safe, and Spacious</h2>
                         <p class="subheading service-description">Maximize your loft’s storage potential with durable,
@@ -182,7 +196,7 @@
                             alt="Loft lights and electrical fittings for a bright and functional attic space">
                     </div>
 
-                    <div>
+                    <div data-aos="fade-left" data-aos-offset="250" data-aos-duration="900">
                         <div class="service-number h2">04</div>
                         <h2 class="h3">Loft Lights and Electrical Fittings: Brightening Up Your Space</h2>
                         <p class="subheading service-description">Make your loft more functional with tailored lighting
@@ -200,7 +214,8 @@
                             alt="Insulation upgrades for improved energy efficiency and loft warmth">
                     </div>
 
-                    <div>
+                    <div data-aos="fade-right" data-aos-offset="250" data-aos-anchor-placement="top-bottom"
+                        data-aos-duration="900">
                         <div class="service-number h2">05</div>
                         <h2 class="h3">Loft Insulation Upgrades: Save Energy, Stay Comfortable</h2>
                         <p class="subheading service-description">A well-insulated loft can save you money on heating
@@ -221,7 +236,7 @@
                             alt="Organized loft storage with neatly packed boxes for efficient space use">
                     </div>
 
-                    <div>
+                    <div data-aos="fade-left" data-aos-offset="250" data-aos-duration="900">
                         <div class="service-number h2">06</div>
                         <h2 class="h3">Loft Clearance: Declutter and Reclaim Your Space</h2>
                         <p class="subheading service-description">Is your loft packed with old, unused items? Our Loft
@@ -283,23 +298,23 @@
                         class="btn-primary btn-primary-light-blue md-and-lg-screen-btn">Let's Talk!</a>
                 </div>
                 <div class="process-steps">
-                    <div class="process-step">
+                    <div data-aos="flip-left" data-aos-offset="250" class="process-step">
                         <div class="process-step-number h2">01</div>
                         <p class="subheading">Contact us for a quote! Include your name, contact details, area size,
                             desired
                             services,
                             and any photos or details you can provide.</p>
                     </div>
-                    <div class="process-step">
+                    <div data-aos="flip-left" data-aos-delay="300" data-aos-offset="250" class="process-step">
                         <div class="process-step-number h2">02</div>
                         <p class="subheading">We inspect your loft, providing a valid quote for 14 days.</p>
                     </div>
-                    <div class="process-step">
+                    <div data-aos="flip-left" data-aos-delay="600" data-aos-offset="250" class="process-step">
                         <div class="process-step-number h2">03</div>
                         <p class="subheading">Schedule the installation date. Ensure the loft is clear before our visit.
                         </p>
                     </div>
-                    <div class="process-step">
+                    <div data-aos="flip-left" data-aos-delay="900" data-aos-offset="250" class="process-step">
                         <div class="process-step-number h2">04</div>
                         <p class="subheading">We arrive, protect your home with drop sheets, and complete the
                             installation as
