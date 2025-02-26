@@ -490,7 +490,7 @@ button,
 
 .process-step {
   background-color: var(--gray-blue-100);
-  background-image: url("/images/wave-lines.png");
+  background-image: url("../images/wave-lines.png");
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: 10px;

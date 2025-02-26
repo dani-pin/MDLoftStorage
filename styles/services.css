@@ -1,6 +1,6 @@
 /* Hero Section */
 .hero-section {
-    background-image: url("/images/services-hero-img.png");
+    background-image: url("../images/services-hero-img.png");
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
