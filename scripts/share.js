@@ -46,3 +46,8 @@ if (banner) {
     bannerContainer.style.transform = `translateX(${-window.scrollY * 0.5}px)`
   })
 }
+
+window.addEventListener('load', () => {
+  const whatsappContainer = document.querySelector('.whatsapp-container')
+  whatsappContainer.style.display = 'block'
+})

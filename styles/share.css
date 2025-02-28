@@ -660,6 +660,7 @@ button,
   bottom: 20px;
   right: 30px;
   z-index: 1000;
+  display: none;
 }
 
 .whatsapp-container:hover {
