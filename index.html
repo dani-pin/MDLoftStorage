@@ -12,30 +12,105 @@
   <title>Loft Boarding & Storage Experts in West Yorkshire</title>
   <link rel="icon" href="./images/favicon.png">
 
-  <!-- Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap"
-    rel="stylesheet">
+  <!-- Preloads -->
+  <link rel="preload" href="./images/hero-img.png" as="image">
+  <link rel="preload" href="./fonts/mulish-v13-latin-600.woff2" as="font" crossorigin>
+  <link rel="preload" href="./fonts/mulish-v13-latin-700.woff2" as="font" crossorigin>
+  <link rel="preload" href="./fonts/pt-serif-v18-latin-regular.woff2" as="font" crossorigin>
 
   <!-- Font awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
     integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    crossorigin="anonymous" referrerpolicy="no-referrer"
+    media="print" onload="this.media='all';this.onload=undefined;" />
 
   <!-- AOS -->
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js" defer></script>
   <script>
     window.addEventListener('DOMContentLoaded', () => {
       AOS.init()
     })
   </script>
 
+  <!-- Simple Analytics -->
+  <script src="https://scripts.simpleanalyticscdn.com/latest.js" defer></script>
+
   <!--  Styles -->
   <link rel="stylesheet" href="./styles/share.css">
-  <link rel="stylesheet" href="./styles/index.css">
+  <style>
+    /* Hero Section */
+    .hero-section {
+      min-height: 100vh;
+      background:
+        url("../images/hero-img.png") right 100px / contain no-repeat,
+        linear-gradient(var(--blue-800), var(--blue-300)) center / cover no-repeat;
+      overflow: hidden;
+    }
+
+    .hero-info-container {
+      margin-top: 35px;
+      max-width: 565px;
+    }
+
+    .hero-h1 {
+      color: var(--white);
+      text-transform: uppercase;
+    }
+
+    .hero-subheading {
+      color: var(--white);
+      margin-top: 25px;
+      margin-bottom: 30px;
+    }
+
+    @media (max-width: 1300px) {
+      .hero-section {
+        min-height: 125vh;
+        background:
+          url("../images/hero-img.png") right bottom / contain no-repeat,
+          linear-gradient(var(--blue-800), var(--blue-300)) center / cover no-repeat;
+      }
+    }
+
+    @media (max-width: 1100px) {
+      .hero-section {
+        min-height: 119vh;
+      }
+    }
+
+    @media (max-width:1007px) {
+      .hero-info-container{
+        margin-top: 0;
+      }
+
+      .hero-subheading {
+        margin-block: 18px;
+      }
+    }
+
+    @media (max-width: 950px) {
+      .hero-section {
+        min-height: 110vh;
+      }
+    }
+
+    @media (max-width: 720px) {
+      .hero-section {
+        min-height: 100vh;
+      }
+
+      .hero-info-container {
+        margin-inline: auto;
+        text-align: center;
+      }
+
+      .hero-upper-line {
+        margin-inline: auto;
+      }
+    }
+  </style>
+  <link rel="stylesheet" href="./styles/index.css" media="print" onload="this.media='all';this.onload=undefined;">
 
   <!--  Scripts -->
   <script src="./scripts/share.js" defer></script>
@@ -88,14 +163,14 @@
     <section class="hero-section section">
       <div class="container">
         <div class="hero-info-container">
-          <div data-aos="fade-right" data-aos-offset="0" class="upper-line-white hero-upper-line"></div>
-          <h1 data-aos="fade-up" data-aos-delay="300" data-aos-offset="0" class="h1 hero-h1">Transform Your Loft into
+          <div data-aos="fade-right" data-aos-offset="-100000" class="upper-line-white hero-upper-line"></div>
+          <h1 data-aos="fade-up" data-aos-delay="300" data-aos-offset="-100000" class="h1 hero-h1">Transform Your Loft into
             storage</h1>
-          <p data-aos="fade-up" data-aos-delay="600" data-aos-offset="0" class="subheading hero-subheading">Convert your
+          <p data-aos="fade-up" data-aos-delay="600" data-aos-offset="-100000" class="subheading hero-subheading">Convert your
             unused loft into a practical, energy-efficient space. We
             offer tailored solutions to suit your unique needs. Proudly serving homes across West Yorkshire with expert
             advice!</p>
-          <a data-aos="fade-up" data-aos-delay="900" data-aos-offset="0"
+          <a data-aos="fade-up" data-aos-delay="900" data-aos-offset="-100000"
             href="https://api.whatsapp.com/send?phone=447469342877" target="_blank"
             class="btn-primary btn-primary-orange">Get Your Free Quote!</a>
         </div>
@@ -231,8 +306,16 @@
         <div class="services-info-container">
           <div class="service">
             <div class="service-img">
-              <img src="./images/our-services-1.png"
-                alt="Sturdy loft ladder providing safe and easy access to attic space">
+              <img
+                alt="Sturdy loft ladder providing safe and easy access to attic space"
+                width="283"
+                height="155"
+                src="./images/our-services-1-283w.png"
+                srcset="./images/our-services-1-283w.png 283w, ./images/our-services-1-565w.png 565w, ./images/our-services-1-1130w.png 1130w"
+                sizes="(max-width: 699px) 100vw, (max-width: 1162px) 50vw, 549.5px"
+                loading="lazy"
+                decoding="async"
+              >
             </div>
             <div class="service-description">
               <h3 data-aos="fade-left" data-aos-offset="150" class="h3">
@@ -621,9 +704,6 @@
       <i class="fa-brands fa-whatsapp"></i>
     </a>
   </div>
-
-  <!-- Simple Analytics -->
-  <script async src="https://scripts.simpleanalyticscdn.com/latest.js"></script>
 </body>
 
 </html>
